@@ -1,0 +1,39 @@
+﻿[
+  {
+    "title": "Doğum Günü Organizasyonu",
+    "description": "Sevdiklerinizle unutulmaz bir doğum günü kutlaması için özel masa süslemeleri, kişiye özel pasta, DJ performansı ve fotoğraf çekimi hizmeti sunuyoruz. Minimum 10 kişilik rezervasyon gereklidir.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 7500
+  },
+  {
+    "title": "Kurumsal Toplantı Yemeği",
+    "description": "Şirket toplantılarınız için projeksiyon, ses sistemi ve özel menü seçenekleriyle profesyonel bir ortam sağlıyoruz. İş yemekleri için sessiz ve konforlu VIP alanımız mevcuttur.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 12000
+  },
+  {
+    "title": "Evlilik Teklifi Organizasyonu",
+    "description": "Romantik masa dekorasyonu, canlı keman performansı ve sürpriz pasta servisi ile hayatınızın en özel anını kusursuz hale getiriyoruz. Boğaz manzaralı özel alan seçeneği sunulur.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 9500
+  },
+  {
+    "title": "Nişan & Kutlama Yemeği",
+    "description": "Aile arasında samimi bir nişan organizasyonu veya özel kutlamalar için zengin menü alternatifleri ve konsept süsleme hizmeti sunuyoruz. 20-50 kişi arası organizasyonlar için uygundur.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 18000
+  },
+  {
+    "title": "Mezuniyet Yemeği",
+    "description": "Mezuniyet sevincinizi arkadaşlarınızla birlikte özel set menü, canlı müzik ve eğlenceli atmosfer eşliğinde kutlayabilirsiniz. Grup rezervasyonlarında özel indirim uygulanır.",
+    "imageUrl": "test",
+    "status": true,
+    "price": 10000
+  }
+]
+
+/yummy-red-1.0.0/assets/img/events-1.jpg

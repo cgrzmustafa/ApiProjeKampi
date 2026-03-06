@@ -1,0 +1,38 @@
+﻿[
+  {
+    "nameSurname": "Ahmet Yılmaz",
+    "title": "Gastronomi Yazarı",
+    "comment": "Lezzetlerin sunumu ve malzeme kalitesi gerçekten üst düzey. Özellikle deniz ürünleri menüsü tazelik açısından beklentimin çok üzerindeydi. Servis ekibi oldukça ilgili ve profesyoneldi.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Elif Kaya",
+    "title": "Kurumsal İletişim Uzmanı",
+    "comment": "İş yemeklerimiz için tercih ettik ve misafirlerimizden tam not aldık. Hem ambiyans hem de servis hızı açısından oldukça başarılı bir restoran.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Mehmet Demir",
+    "title": "Şef & Mutfak Danışmanı",
+    "comment": "Menüdeki her tabakta özen hissediliyor. Tat dengesi, porsiyon kontrolü ve sunum estetiği profesyonel bir mutfağın imzasını taşıyor.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Zeynep Arslan",
+    "title": "Seyahat Bloggerı",
+    "comment": "Şehre her gelişimde mutlaka uğradığım bir yer haline geldi. Atmosferi sıcak, çalışanlar güler yüzlü ve tatlıları kesinlikle denenmeli.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Burak Çetin",
+    "title": "Yazılım Mühendisi",
+    "comment": "Arkadaş grubumuzla keyifli bir akşam geçirdik. Fiyat-performans açısından oldukça tatmin edici ve rezervasyon süreci de çok kolaydı.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Derya Şahin",
+    "title": "Etkinlik Organizasyon Yöneticisi",
+    "comment": "Özel davet organizasyonumuz için tercih ettik ve her detay kusursuzdu. Hem lezzet hem de hizmet kalitesi açısından kesinlikle tavsiye ederim.",
+    "imageUrl": "test"
+  }
+]

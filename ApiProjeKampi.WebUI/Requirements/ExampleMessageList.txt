@@ -1,0 +1,82 @@
+﻿[
+  {
+    "nameSurname": "Ahmet Yılmaz",
+    "email": "ahmetyilmaz@gmail.com",
+    "subject": "Rezervasyon Hakkında",
+    "messageDetails": "Cumartesi akşamı için 4 kişilik rezervasyon yaptırmak istiyorum. Saat 19:30 uygun mudur?",
+    "sendDate": "2026-02-10T14:25:00",
+    "isRead": true
+  },
+  {
+    "nameSurname": "Elif Kaya",
+    "email": "elifkaya@hotmail.com",
+    "subject": "Doğum Günü Organizasyonu",
+    "messageDetails": "Kız kardeşim için küçük bir doğum günü sürprizi planlıyorum. Pasta ve masa süslemesi hizmetiniz var mı?",
+    "sendDate": "2026-02-11T18:40:00",
+    "isRead": true
+  },
+  {
+    "nameSurname": "Mehmet Demir",
+    "email": "mehmetdemir@yahoo.com",
+    "subject": "Menü İçeriği Hakkında",
+    "messageDetails": "Menünüzde glutensiz seçenekler mevcut mu? Özellikle ana yemeklerde alternatif arıyorum.",
+    "sendDate": "2026-02-12T09:15:00",
+    "isRead": true
+  },
+  {
+    "nameSurname": "Zeynep Arslan",
+    "email": "zeyneparsln@gmail.com",
+    "subject": "Teşekkür Mesajı",
+    "messageDetails": "Geçtiğimiz akşamki hizmetiniz için teşekkür ederim. Garsonlarınız çok ilgiliydi ve yemekler harikaydı.",
+    "sendDate": "2026-02-12T21:05:00",
+    "isRead": true
+  },
+  {
+    "nameSurname": "Burak Çetin",
+    "email": "burakcetin@hotmail.com",
+    "subject": "Canlı Müzik Günleri",
+    "messageDetails": "Canlı müzik etkinlikleriniz hangi günler oluyor? Rezervasyon yaptırmadan önce bilgi almak istiyorum.",
+    "sendDate": "2026-02-13T16:30:00",
+    "isRead": true
+  },
+  {
+    "nameSurname": "Seda Aydın",
+    "email": "sedaaydin@gmail.com",
+    "subject": "Vale Hizmeti",
+    "messageDetails": "Restoranınızda vale hizmeti bulunuyor mu? Hafta sonu yoğunluk olur mu diye öğrenmek istedim.",
+    "sendDate": "2026-02-14T13:10:00",
+    "isRead": true
+  },
+  {
+    "nameSurname": "Onur Kaplan",
+    "email": "onurkaplan@gmail.com",
+    "subject": "Şikayet",
+    "messageDetails": "Dün akşam sipariş ettiğimiz yemek geç geldi ve soğuktu. Bu konuda geri dönüş yapmanızı rica ediyorum.",
+    "sendDate": "2026-02-15T20:45:00",
+    "isRead": false
+  },
+  {
+    "nameSurname": "Gizem Şahin",
+    "email": "gizemsahin@hotmail.com",
+    "subject": "Toplu Yemek Talebi",
+    "messageDetails": "Şirketimiz için 20 kişilik bir akşam yemeği organizasyonu planlıyoruz. Fiyat teklifi alabilir miyim?",
+    "sendDate": "2026-02-16T11:20:00",
+    "isRead": false
+  },
+  {
+    "nameSurname": "Emre Polat",
+    "email": "emrepolat@yahoo.com",
+    "subject": "Özel Masa Talebi",
+    "messageDetails": "Eşimle evlilik yıl dönümümüz için cam kenarında romantik bir masa ayırtmak istiyorum.",
+    "sendDate": "2026-02-17T15:55:00",
+    "isRead": false
+  },
+  {
+    "nameSurname": "Derya Koç",
+    "email": "deryakoc@gmail.com",
+    "subject": "Çocuk Menüsü",
+    "messageDetails": "Çocuklar için özel bir menünüz var mı? 6 yaşındaki oğlum için uygun seçenek arıyorum.",
+    "sendDate": "2026-02-18T10:05:00",
+    "isRead": false
+  }
+]

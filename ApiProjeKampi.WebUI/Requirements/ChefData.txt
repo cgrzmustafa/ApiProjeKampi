@@ -1,0 +1,20 @@
+﻿[
+  {
+    "nameSurname": "Mehmet Arslan",
+    "title": "Executive Chef",
+    "description": "15 yıllık mutfak deneyimiyle Türk ve Akdeniz mutfağında uzmanlaşmıştır. Yaratıcı sunumları ve özel sos reçeteleriyle restoranımızın imza lezzetlerine hayat vermektedir.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Elif Kaya",
+    "title": "Sous Chef",
+    "description": "Modern dünya mutfağı üzerine eğitim almış olup fine-dining konseptinde uzmanlaşmıştır. Menü geliştirme ve tabak tasarımı konularında ekibe liderlik etmektedir.",
+    "imageUrl": "test"
+  },
+  {
+    "nameSurname": "Ahmet Demir",
+    "title": "Pastry Chef",
+    "description": "Tatlı ve pastacılık alanında uzman olan şefimiz, el yapımı tatlılar ve özel çikolata sunumlarıyla misafirlerimize unutulmaz bir final deneyimi yaşatmaktadır.",
+    "imageUrl": "test"
+  }
+]

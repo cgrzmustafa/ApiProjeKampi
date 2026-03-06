@@ -1,0 +1,32 @@
+﻿[
+  {
+    "description": "Yeni bir rezervasyon talebi oluşturuldu (4 kişilik masa - 19:30).",
+    "iconUrl": "icons/reservation.png",
+    "notificationDate": "2026-02-18T14:20:00.000Z",
+    "isRead": false
+  },
+  {
+    "description": "Ahmet Yılmaz isimli müşteriden yeni mesaj alındı.",
+    "iconUrl": "icons/message.png",
+    "notificationDate": "2026-02-18T15:05:00.000Z",
+    "isRead": false
+  },
+  {
+    "description": "Bu akşamki canlı müzik etkinliği için masa sayısı dolmak üzere.",
+    "iconUrl": "icons/event.png",
+    "notificationDate": "2026-02-18T16:10:00.000Z",
+    "isRead": false
+  },
+  {
+    "description": "Günlük ciro raporu başarıyla oluşturuldu.",
+    "iconUrl": "icons/report.png",
+    "notificationDate": "2026-02-18T12:00:00.000Z",
+    "isRead": true
+  },
+  {
+    "description": "Stok uyarısı: Somon balığı stoğu minimum seviyeye düştü.",
+    "iconUrl": "icons/warning.png",
+    "notificationDate": "2026-02-18T11:30:00.000Z",
+    "isRead": true
+  }
+]

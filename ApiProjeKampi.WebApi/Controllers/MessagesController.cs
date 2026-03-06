@@ -63,5 +63,12 @@ namespace ApiProjeKampi.WebApi.Controllers
 
         }
 
+        [HttpGet("MessageListByIsReadFalse")]
+        public IActionResult MessageListByIsReadFalse()
+        {
+            var value = _context.Messages.Where(x => x.IsRead == false).ToList();
+            return Ok(value);
+        }
+
     }
 }
