@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "CreateRecipeWithGroqAI";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<section class="section">
+    <div class="section-body">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Groq AI ile Yemek Tarifi Önerisi</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="post">
+                            <label>Elinizdeki Malzemeler Ve Anahtar Kelimeler</label>
+                            <input type="text" name="prompt" class="form-control" placeholder="Örn: Tavuk, krema, mantar..." required />
+                            <br />
+                            <button class="btn btn-primary">Tarif Önerisi Oluştur</button>
+                        </form>
+                        <br /> <br />
+
+                        @if (ViewBag.recipe != null)
+                        {
+                            <hr />
+                            <div class="alert alert-light border">
+                                <h5>Oluşturulan AI Yemek Tarifi Önerisi</h5>
+                                <br />
+                                <div style="line-height: 1.6; font-size: 1.1rem;">
+                                    @Html.Raw(ViewBag.recipe.ToString().Replace("\n", "<br/>"))
+                                </div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,113 @@
+﻿@{
+    ViewData["Title"] = "Groq AI Chat";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<style>
+    #chat {
+        border: 1px solid #e0e0e0;
+        border-radius: 12px;
+        padding: 15px;
+        height: 450px; 
+        overflow-y: auto;
+        background-color: #ffffff;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .user-message {
+        margin: 10px 0;
+        font-weight: 600;
+        color: #2c3e50;
+        text-align: right;
+    }
+
+    .ai-message {
+        margin: 10px 0;
+        background: #f1f3f4;
+        padding: 12px;
+        border-radius: 12px;
+        border-bottom-left-radius: 2px;
+        line-height: 1.5;
+    }
+</style>
+
+<div id="chat"></div>
+<div id="typing" style="opacity:.7; font-style:italic; margin-top:6px; display:none; color: #666;">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Groq yanıtlıyor...
+</div>
+
+<div style="display:flex; gap:8px; margin-top:12px">
+    <input id="messageInput" type="text" class="form-control" placeholder="Groq (Llama 3) ile konuşun..." style="flex:1; padding:10px" />
+    <button id="sendBtn" class="btn btn-primary">Gönder</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@@microsoft/signalr@8.0.0/dist/browser/signalr.min.js"></script>
+<script>
+    const chat = document.getElementById('chat');
+    const typing = document.getElementById('typing');
+    const input = document.getElementById('messageInput');
+    const sendBtn = document.getElementById('sendBtn');
+
+    let currentAiBox = null;
+
+    const conn = new signalR.HubConnectionBuilder()
+        .withUrl("/chathub")
+        .withAutomaticReconnect()
+        .build();
+
+    conn.on("ReceiveUserEcho", (text) => {
+        const div = document.createElement('div');
+        div.className = 'user-message';
+        div.textContent = "Siz: " + text;
+        chat.appendChild(div);
+        chat.scrollTop = chat.scrollHeight;
+    });
+
+    conn.on("ReceiveToken", (token) => {
+        typing.style.display = 'block';
+        if (!currentAiBox) {
+            currentAiBox = document.createElement('div');
+            currentAiBox.className = 'ai-message';
+            currentAiBox.textContent = "";
+            chat.appendChild(currentAiBox);
+        }
+        currentAiBox.textContent += token;
+        chat.scrollTop = chat.scrollHeight;
+    });
+
+    conn.on("CompleteMessage", (_full) => {
+        typing.style.display = 'none';
+        currentAiBox = null; 
+        chat.scrollTop = chat.scrollHeight;
+    });
+
+    async function start() {
+        try {
+            await conn.start();
+            console.log("SignalR Bağlantısı Başarılı!");
+        } catch (e) {
+            console.error("Bağlantı Hatası:", e);
+            setTimeout(start, 2000);
+        }
+    }
+    start();
+
+    async function send() {
+        const text = input.value.trim();
+        if (!text) return;
+
+        input.value = "";
+        currentAiBox = null;
+        typing.style.display = 'block';
+
+        try {
+            await conn.invoke("SendMessage", text);
+        } catch (err) {
+            console.error("Mesaj gönderilemedi:", err);
+            typing.style.display = 'none';
+        }
+    }
+
+    sendBtn.addEventListener('click', send);
+    input.addEventListener('keydown', e => { if (e.key === 'Enter') send(); });
+</script>
